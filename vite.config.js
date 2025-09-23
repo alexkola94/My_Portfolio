@@ -1,18 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-	root: '.',
-	server: {
-		port: 5173,
-		open: true
-	},
-	preview: {
-		port: 5500
-	},
-	build: {
-		outDir: 'dist',
-		emptyOutDir: true
-	}
-});
+  base: '/My_Portfolio/', // <-- set this to /REPO_NAME/ for repo GitHub Pages
+  plugins: [react()],
+})
 
 
