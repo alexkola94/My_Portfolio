@@ -1,0 +1,29 @@
+{
+	"intro.title": "I'm Alex",
+	"intro.subtitle": "and this is my Portfolio",
+	"intro.tagline": "Showcase of my projects and abilities",
+	"intro.cta": "Continue",
+
+	"filters.all": "All",
+	"about.title": "About",
+	"about.text": "Full Stack Web Developer based in Athens, focused on building clean, accessible, and performant web apps.",
+	"skills.title": "Skills",
+	"skills.frontend": "Frontend",
+	"skills.backend": "Backend",
+	"skills.tools": "Tools",
+	"contact.title": "Contact",
+	"contact.name": "Name",
+	"contact.email": "Email",
+	"contact.message": "Message",
+	"contact.send": "Send",
+	"contact.subject": "Portfolio contact",
+	"contact.error.required": "Please fill all fields.",
+	"contact.error.email": "Enter a valid email.",
+
+	"footer.address": "Address",
+	"footer.phone": "Phone",
+	"footer.email": "Email",
+	"footer.social": "Social"
+}
+
+

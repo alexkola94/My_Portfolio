@@ -1,0 +1,29 @@
+{
+	"intro.title": "Είμαι ο Alex",
+	"intro.subtitle": "και αυτό είναι το Portfolio μου",
+	"intro.tagline": "Παρουσίαση των έργων και δεξιοτήτων μου",
+	"intro.cta": "Συνέχεια",
+
+	"filters.all": "Όλα",
+	"about.title": "Σχετικά",
+	"about.text": "Full Stack Web Developer στην Αθήνα, με έμφαση σε καθαρές, προσβάσιμες και αποδοτικές εφαρμογές.",
+	"skills.title": "Δεξιότητες",
+	"skills.frontend": "Frontend",
+	"skills.backend": "Backend",
+	"skills.tools": "Εργαλεία",
+	"contact.title": "Επικοινωνία",
+	"contact.name": "Όνομα",
+	"contact.email": "Email",
+	"contact.message": "Μήνυμα",
+	"contact.send": "Αποστολή",
+	"contact.subject": "Επικοινωνία Portfolio",
+	"contact.error.required": "Συμπλήρωσε όλα τα πεδία.",
+	"contact.error.email": "Δώσε έγκυρο email.",
+
+	"footer.address": "Διεύθυνση",
+	"footer.phone": "Τηλέφωνο",
+	"footer.email": "Email",
+	"footer.social": "Κοινωνικά"
+}
+
+

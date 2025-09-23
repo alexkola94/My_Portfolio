@@ -1,0 +1,222 @@
+#main { width: calc(100% - 2rem) !important; max-width: 90rem !important; margin: 0 auto !important; }
+
+/* Vertical rhythm between main containers */
+#main > .post { margin-bottom: 2rem; }
+.filter-bar { margin: 0.5rem 0 1rem 0; }
+#main > .posts { margin-bottom: 2.5rem; }
+footer#footer { margin-top: 2rem; }
+/* App custom enhancements - smooth transitions, rounded edges, glass nav */
+
+/* React renders into #wrapper; ensure it's visible */
+
+/* Glass-like nav background on large screens */
+#nav {
+    backdrop-filter: saturate(160%) blur(8px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+}
+
+/* Card grid: compact, responsive, less zoomed */
+#main > .post { padding: 3rem 3rem 2rem 3rem; }
+
+#main > .posts {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem !important;
+    border-top: 0 !important;
+}
+
+@media (max-width: 1280px) { #main > .posts { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); } }
+@media (max-width: 736px)  { #main > .posts { grid-template-columns: 1fr; } }
+
+#main > .posts > article {
+    border: none !important;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem !important;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+}
+
+#main > .posts > article:hover { transform: translateY(-3px); box-shadow: 0 16px 32px rgba(0,0,0,0.12); }
+
+/* Smooth image reveal */
+img[loading="lazy"] {
+    transition: opacity 300ms ease;
+    opacity: 0;
+}
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Sticky locale switch container tweaks */
+.locale-switch {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.locale-toggle {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    width: 84px;
+    height: 34px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.locale-toggle .label {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: #1e252d; /* dark text so it's visible on white backgrounds */
+    opacity: 0.9;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.locale-toggle .label.left { left: 0; }
+.locale-toggle .label.right { right: 0; }
+
+.locale-toggle .knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 180ms ease;
+}
+
+.locale-toggle.gr .knob { transform: translateX(50px); }
+.locale-toggle.en .knob { transform: translateX(0); }
+
+/* Filter bar and tags */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0 2rem 0.5rem 2rem; }
+.chip { border: 1px solid #e0e0e0; background: #ffffff; color: #212931; border-radius: 999px; padding: 0.35rem 0.75rem; font-size: 0.8rem; cursor: pointer; transition: all 160ms ease; }
+.chip:hover { border-color: #18bfef; color: #18bfef; }
+.chip.active { background: #18bfef; color: #ffffff; border-color: #18bfef; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0 0 0.75rem 0; }
+.tag { border: 1px solid #e8e8e8; background: #fafafa; color: #555; border-radius: 999px; padding: 0.15rem 0.5rem; font-size: 0.7rem; }
+
+/* Modal */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.55); display: flex; align-items: center; justify-content: center; z-index: 10003; padding: 1rem; }
+.modal__content { background: #ffffff; color: #212931; width: 100%; max-width: 800px; border-radius: 16px; padding: 1.5rem; box-shadow: 0 12px 40px rgba(0,0,0,0.25); position: relative; animation: pop 150ms ease; }
+.modal__close { position: absolute; top: 0.5rem; right: 0.75rem; border: none; background: transparent; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.modal__actions { display: flex; gap: 0.75rem; margin-top: 0.75rem; }
+@keyframes pop { from{ transform: scale(0.98); opacity: 0; } to{ transform: scale(1); opacity: 1; } }
+
+/* Sections: About, Skills, Contact */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.skill-group h4 { margin-bottom: 0.35rem; }
+.contact-form input, .contact-form textarea { width: 100%; }
+.error-text { color: #d33; }
+
+/* Buttons hover/focus */
+.button { transition: background-color 180ms ease, box-shadow 180ms ease, color 180ms ease; }
+.button:hover { box-shadow: inset 0 0 0 2px #18bfef; color: #18bfef !important; }
+.button.primary:hover { background-color: #18bfef !important; color: #ffffff !important; }
+.button:focus { outline: 2px solid #18bfef; outline-offset: 2px; }
+
+/* Remove focus outline specifically for compact locale buttons */
+.locale-switch .button:focus { outline: none; }
+
+/* Enable smooth scroll for in-page anchors (arrow to content) */
+html { scroll-behavior: smooth; }
+
+/* Image skeleton */
+.image.fit img { background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.12), rgba(0,0,0,0.06)); background-size: 400% 100%; animation: shimmer 1.2s ease-in-out infinite; }
+.image.fit img.loaded { animation: none; background: transparent; }
+@keyframes shimmer { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+
+/* Locale switch fixed top-right */
+.locale-switch { position: fixed; top: 1rem; right: 1rem; width: auto; max-width: none; }
+
+/* Smaller language buttons */
+.locale-switch .button.small {
+    border: none;
+    background: transparent;
+    color: #ffffff !important;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.locale-switch .button.small.primary {
+    background: #ffffff !important;
+    color: #1e252d !important;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+/* Card media: consistent aspect and less visual weight */
+.image.fit { margin: 0 0 0.75rem 0 !important; width: 100%; }
+.image.fit img { display:block; width: 100%; height: 220px; object-fit: cover; border-radius: 12px; }
+@media (max-width: 736px) { .image.fit img { height: 200px; } }
+
+/* Typography scale down for cards */
+#main > .posts > article h2 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+#main > .posts > article p { font-size: 0.95rem; line-height: 1.7; margin-bottom: 0.75rem; }
+
+/* Keep button pinned to bottom for equal card heights */
+#main > .posts > article ul.actions { margin-top: auto; width: 100%; margin-left: 0 !important; padding-left: 0 !important; display: block; }
+#main > .posts > article ul.actions li { width: 100%; padding-left: 0 !important; }
+#main > .posts > article ul.actions li > * { width: 100%; }
+
+/* Compact card button sizing */
+#main > .posts > article .button {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Featured button matches card size */
+#main > .post.featured .button {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    border-radius: 10px;
+}
+
+/* Featured as a larger card but not full-bleed */
+#main > .post.featured { text-align: left; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); padding: 3rem !important; }
+#main > .post.featured .image.main { margin: 1rem 0 !important; }
+#main > .post.featured .image.main img { height: 340px; object-fit: cover; border-radius: 14px; }
+#main > .post.featured header.major h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+
+/* Remove template borders between rows */
+#main > .posts > article { border-left-width: 0 !important; border-top-width: 0 !important; }
+
+
