@@ -60,7 +60,7 @@ function ProjectCard({ p }) {
                 </header>
             )}
             <a href={p.link} className={p.featured ? 'image main' : 'image fit'}>
-                <img src={new URL(p.image, import.meta.env.BASE_URL).toString()} alt={p.title} loading="lazy" onLoad={(e) => e.currentTarget.classList.add('loaded')} />
+                <img src={p.image} alt={p.title} loading="lazy" onLoad={(e) => e.currentTarget.classList.add('loaded')} />
             </a>
             <ul className="actions special">
                 {p.repo ? (
