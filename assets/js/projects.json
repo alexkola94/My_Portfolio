@@ -1,15 +1,136 @@
 [
-	{ "title": "Personal CV Website", "desc": "Personal CV website showcasing experience, skills, and contact details.", "image": "images/personal_site.png", "link": "https://alexkola94.github.io/MySiteCv/", "featured": true, "tags": ["React","Portfolio"] },
-	{ "title": "Best Games 2022 Blog", "desc": "Gaming blog with picks from 2022. Built with HTML, CSS, Bootstrap, JS.", "image": "images/Untitled.png", "link": "https://alexkola94.github.io/Gaming_blog/", "repo": "https://github.com/alexkola94/Gaming_blog", "tags": ["HTML","CSS","Bootstrap","JS"] },
-	{ "title": "Popcorn Rules", "desc": "Blog of favorite TV series. HTML, CSS, Bootstrap, JavaScript.", "image": "images/popcorn_rules.png", "link": "https://alexkola94.github.io/popcorn_rules/index.html", "repo": "https://github.com/alexkola94/popcorn_rules", "tags": ["HTML","CSS","Bootstrap","JS"] },
-	{ "title": "Popcorn Quiz", "desc": "Quiz app related to Popcorn Rules. HTML, CSS, JavaScript.", "image": "images/Popcorn_quiz.png", "link": "https://alexkola94.github.io/Popcorn_Quiz/", "repo": "https://github.com/alexkola94/Popcorn_Quiz", "tags": ["HTML","CSS","JS"] },
-	{ "title": "Glamour E-shop", "desc": "Fashion e-shop preview. HTML, CSS, Bootstrap, JavaScript.", "image": "images/glamour_eshop.png", "link": "https://alexkola94.github.io/Glamour_Eshop/", "repo": "https://github.com/alexkola94/Glamour_Eshop", "tags": ["HTML","CSS","Bootstrap","JS"] },
-	{ "title": "Simon game", "desc": "Classic Simon game with jQuery, HTML, CSS.", "image": "images/simon_game.png", "link": "https://alexkola94.github.io/simon_game/", "repo": "https://github.com/alexkola94/simon_game", "tags": ["jQuery","HTML","CSS"] },
-	{ "title": "Drum Kit Site", "desc": "Practice virtual drums. Vanilla JS, HTML, CSS, Bootstrap.", "image": "images/drum_kit.png", "link": "https://alexkola94.github.io/Drum_kit/", "repo": "https://github.com/alexkola94/Drum_kit", "tags": ["Vanilla JS","HTML","CSS","Bootstrap"] },
-	{ "title": "Tindog", "desc": "Tinder for dogs. HTML, CSS, Bootstrap.", "image": "images/tindog.png", "link": "https://alexkola94.github.io/Tindog_Project/", "repo": "https://github.com/alexkola94/Tindog_Project", "tags": ["HTML","CSS","Bootstrap"] },
-	{ "title": "Dice Game", "desc": "Reload to pick a random winner. HTML, CSS, Bootstrap, JS.", "image": "images/dice_game.png", "link": "https://alexkola94.github.io/dice_UP/", "repo": "https://github.com/alexkola94/dice_UP", "tags": ["Vanilla JS","HTML","CSS"] },
-	{ "title": "Under Construction Site", "desc": "Simple construction page. HTML, CSS, Bootstrap.", "image": "images/under_construction.png", "link": "http://www.simoskaramichalis.gr/", "tags": ["HTML","CSS","Bootstrap"] },
-	{ "title": "Guess my Number Web App", "desc": "DOM manipulation guessing game. Vanilla JS.", "image": "images/Screenshot from 2022-01-17 15-34-43.png", "link": "https://alexkola94.github.io/Guess_My_Number/", "repo": "https://github.com/alexkola94/Guess_My_Number", "tags": ["Vanilla JS","HTML","CSS"] }
+	{
+		"title": "Paire Economy",
+		"desc": "A comprehensive expense tracking and financial management platform for couples.",
+		"image": "images/paire_economy.png",
+		"link": "https://paire-economy.vercel.app/",
+		"tags": [
+			"React",
+			".NET",
+			"Supabase"
+		]
+	},
+	{
+		"title": "Personal CV Website",
+		"desc": "Personal CV website showcasing experience, skills, and contact details.",
+		"image": "images/personal_site.png",
+		"link": "https://alexkola94.github.io/MySiteCv/",
+		"featured": true,
+		"tags": [
+			"React",
+			"Portfolio"
+		]
+	},
+	{
+		"title": "Best Games 2022 Blog",
+		"desc": "Gaming blog with picks from 2022. Built with HTML, CSS, Bootstrap, JS.",
+		"image": "images/Untitled.png",
+		"link": "https://alexkola94.github.io/Gaming_blog/",
+		"repo": "https://github.com/alexkola94/Gaming_blog",
+		"tags": [
+			"HTML",
+			"CSS",
+			"Bootstrap",
+			"JS"
+		]
+	},
+	{
+		"title": "Popcorn Rules",
+		"desc": "Blog of favorite TV series. HTML, CSS, Bootstrap, JavaScript.",
+		"image": "images/popcorn_rules.png",
+		"link": "https://alexkola94.github.io/popcorn_rules/index.html",
+		"repo": "https://github.com/alexkola94/popcorn_rules",
+		"tags": [
+			"HTML",
+			"CSS",
+			"Bootstrap",
+			"JS"
+		]
+	},
+	{
+		"title": "Popcorn Quiz",
+		"desc": "Quiz app related to Popcorn Rules. HTML, CSS, JavaScript.",
+		"image": "images/Popcorn_quiz.png",
+		"link": "https://alexkola94.github.io/Popcorn_Quiz/",
+		"repo": "https://github.com/alexkola94/Popcorn_Quiz",
+		"tags": [
+			"HTML",
+			"CSS",
+			"JS"
+		]
+	},
+	{
+		"title": "Glamour E-shop",
+		"desc": "Fashion e-shop preview. HTML, CSS, Bootstrap, JavaScript.",
+		"image": "images/glamour_eshop.png",
+		"link": "https://alexkola94.github.io/Glamour_Eshop/",
+		"repo": "https://github.com/alexkola94/Glamour_Eshop",
+		"tags": [
+			"HTML",
+			"CSS",
+			"Bootstrap",
+			"JS"
+		]
+	},
+	{
+		"title": "Simon game",
+		"desc": "Classic Simon game with jQuery, HTML, CSS.",
+		"image": "images/simon_game.png",
+		"link": "https://alexkola94.github.io/simon_game/",
+		"repo": "https://github.com/alexkola94/simon_game",
+		"tags": [
+			"jQuery",
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"title": "Drum Kit Site",
+		"desc": "Practice virtual drums. Vanilla JS, HTML, CSS, Bootstrap.",
+		"image": "images/drum_kit.png",
+		"link": "https://alexkola94.github.io/Drum_kit/",
+		"repo": "https://github.com/alexkola94/Drum_kit",
+		"tags": [
+			"Vanilla JS",
+			"HTML",
+			"CSS",
+			"Bootstrap"
+		]
+	},
+	{
+		"title": "Tindog",
+		"desc": "Tinder for dogs. HTML, CSS, Bootstrap.",
+		"image": "images/tindog.png",
+		"link": "https://alexkola94.github.io/Tindog_Project/",
+		"repo": "https://github.com/alexkola94/Tindog_Project",
+		"tags": [
+			"HTML",
+			"CSS",
+			"Bootstrap"
+		]
+	},
+	{
+		"title": "Dice Game",
+		"desc": "Reload to pick a random winner. HTML, CSS, Bootstrap, JS.",
+		"image": "images/dice_game.png",
+		"link": "https://alexkola94.github.io/dice_UP/",
+		"repo": "https://github.com/alexkola94/dice_UP",
+		"tags": [
+			"Vanilla JS",
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"title": "Guess my Number Web App",
+		"desc": "DOM manipulation guessing game. Vanilla JS.",
+		"image": "images/Screenshot from 2022-01-17 15-34-43.png",
+		"link": "https://alexkola94.github.io/Guess_My_Number/",
+		"repo": "https://github.com/alexkola94/Guess_My_Number",
+		"tags": [
+			"Vanilla JS",
+			"HTML",
+			"CSS"
+		]
+	}
 ]
-
-
